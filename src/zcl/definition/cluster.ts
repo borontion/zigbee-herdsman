@@ -1977,6 +1977,33 @@ const Cluster: {
         commandsResponse: {
         },
     },
+    cncRealtimeDevice: {
+        ID: 528,
+        attributes: {
+            state: {ID: 0, type: DataType.uint8},
+            proc: {ID: 1, type: DataType.charStr},
+            runtime: {ID: 2, type: DataType.uint16},
+            cuttime: {ID: 3, type: DataType.uint16},
+            spindle: {ID: 4, type: DataType.int64}
+        },
+        commands: {
+        },
+        commandsResponse: {
+        },
+    },
+    cncRealtimeAxis: {
+        ID: 529,
+        attributes: {
+            state: {ID: 0, type: DataType.uint8},
+            coordType: {ID: 1, type: DataType.uint8},
+            coord: {ID: 2, type: DataType.int64},
+            feed: {ID: 3, type: DataType.int64}
+        },
+        commands:{
+        },
+        commandsResponse: {
+        }
+    },
     lightingColorCtrl: {
         ID: 768,
         attributes: {
@@ -2244,10 +2271,11 @@ const Cluster: {
     msTemperatureMeasurement: {
         ID: 1026,
         attributes: {
-            measuredValue: {ID: 0, type: DataType.int16},
+            measuredValue: {ID: 0, type: DataType.int64},
             minMeasuredValue: {ID: 1, type: DataType.int16},
             maxMeasuredValue: {ID: 2, type: DataType.int16},
             tolerance: {ID: 3, type: DataType.uint16},
+            location: {ID: 4, type: DataType.uint8},
             minPercentChange: {ID: 16, type: DataType.unknown},
             minAbsoluteChange: {ID: 17, type: DataType.unknown},
         },
