@@ -1977,6 +1977,27 @@ const Cluster: {
         commandsResponse: {
         },
     },
+    cncRealtime: {
+        ID: 529,
+        attributes: {
+            cncRealtimeState: {ID: 0, type: DataType.uint8},
+            cncRealtimeProc: {ID: 1, type: DataType.charStr},
+            cncRealtimeLine: {ID: 2, type: DataType.uint32},
+            cncRealtimeGmode: {ID: 3, type: DataType.charStr},
+            cncRealtimeRuntime: {ID: 4, type: DataType.uint32},
+            cncRealtimeCuttime: {ID: 5, type: DataType.uint32},
+            cncRealtimeSpindle: {ID: 16, type: DataType.charStr},
+            cncRealtimeCoordtype: {ID: 17, type: DataType.uint8},
+            cncRealtimeCoord: {ID: 18, type: DataType.charStr},
+            cncRealtimeFeed: {ID: 19, type: DataType.charStr},
+            cncRealtimeTemperature: {ID: 257, type: DataType.charStr},
+            cncRealtimeDisplacement: {ID: 258, type: DataType.charStr},
+        },
+        commands: {
+        },
+        commandsResponse: {
+        },
+    },
     lightingColorCtrl: {
         ID: 768,
         attributes: {
