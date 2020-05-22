@@ -1977,32 +1977,26 @@ const Cluster: {
         commandsResponse: {
         },
     },
-    cncRealtimeDevice: {
-        ID: 528,
+    cncRealtime: {
+        ID: 529,
         attributes: {
-            state: {ID: 0, type: DataType.uint8},
-            proc: {ID: 1, type: DataType.charStr},
-            runtime: {ID: 2, type: DataType.uint16},
-            cuttime: {ID: 3, type: DataType.uint16},
-            spindle: {ID: 4, type: DataType.int64}
+            cncRealtimeState: {ID: 0, type: DataType.uint8},
+            cncRealtimeProc: {ID: 1, type: DataType.charStr},
+            cncRealtimeLine: {ID: 2, type: DataType.uint32},
+            cncRealtimeGmode: {ID: 3, type: DataType.charStr},
+            cncRealtimeRuntime: {ID: 4, type: DataType.uint32},
+            cncRealtimeCuttime: {ID: 5, type: DataType.uint32},
+            cncRealtimeSpindle: {ID: 16, type: DataType.charStr},
+            cncRealtimeCoordtype: {ID: 17, type: DataType.uint8},
+            cncRealtimeCoord: {ID: 18, type: DataType.charStr},
+            cncRealtimeFeed: {ID: 19, type: DataType.charStr},
+            cncRealtimeTemperature: {ID: 257, type: DataType.charStr},
+            cncRealtimeDisplacement: {ID: 258, type: DataType.charStr},
         },
         commands: {
         },
         commandsResponse: {
         },
-    },
-    cncRealtimeAxis: {
-        ID: 529,
-        attributes: {
-            state: {ID: 0, type: DataType.uint8},
-            coordType: {ID: 1, type: DataType.uint8},
-            coord: {ID: 2, type: DataType.int64},
-            feed: {ID: 3, type: DataType.int64}
-        },
-        commands:{
-        },
-        commandsResponse: {
-        }
     },
     lightingColorCtrl: {
         ID: 768,
